@@ -20,8 +20,17 @@ body {
 }
 
 .logo-font {
-    text-transform: uppercase;  
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;     
 }
+
+#homepage-landing-text{
+    background: rgba(164, 173, 185, 0.6);
+    border: 3px solid rgb(164, 173, 185);
+    border-radius: 0.5rem;
+  
+}
+
 
 .main-logo-link {
     width: fit-content;
@@ -30,7 +39,7 @@ body {
 .shop-now-button {
     background: black;
     color: white;
-    min-width: 260px;
+    min-width: 260px;    
 }
 
 .btn-black {
@@ -79,3 +88,22 @@ body {
         padding-top: 164px;
     }
 }
+
+/* Media for secreen max 991px */
+/* 
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 118px);
+    }
+    .login {
+      display: block;
+    }
+    .active-link {
+      border: none!important;
+  }  
+} */
+
