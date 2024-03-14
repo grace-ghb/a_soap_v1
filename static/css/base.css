@@ -24,12 +24,14 @@ body {
     font-family: 'Times New Roman', Times, serif;     
 }
 
-#homepage-landing-text{
+#hero-text-bg{
     background: rgba(164, 173, 185, 0.6);
     border: 3px solid rgb(164, 173, 185);
     border-radius: 0.5rem;
+    color: darkslateblue;
   
 }
+
 
 
 .main-logo-link {
@@ -37,14 +39,14 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: darkslateblue;
     color: white;
     min-width: 260px;    
 }
 
 .btn-black {
     background: black;
-    color: white;
+    color: white;    
 }
 
 .shop-now-button:hover,
@@ -90,7 +92,7 @@ body {
 }
 
 /* Media for secreen max 991px */
-/* 
+
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
@@ -105,5 +107,13 @@ body {
     .active-link {
       border: none!important;
   }  
-} */
+  #hero-text-bg h1{
+    font-size: 2.0rem;
+  }
+  #hero-text-bg{
+    background: rgba(164, 173, 185, 0.5);
+    border: none;
+  }
+  
+}
 
