@@ -26,7 +26,7 @@ body {
 
 #hero-text-bg{
     background: rgba(164, 173, 185, 0.6);
-    border: 3px solid rgb(164, 173, 185);
+    /* border: 1px solid rgb(164, 173, 185); */
     border-radius: 0.5rem;
     color: darkslateblue;
   
@@ -65,6 +65,10 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.bg-black{
+    background: darkslateblue !important;
 }
 
 /* -------------------------------- Media Queries */
