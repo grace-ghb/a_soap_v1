@@ -24,7 +24,7 @@ body {
     font-family: 'Times New Roman', Times, serif;     
 }
 
-#hero-text-bg{
+#hero-text{
     background: rgba(164, 173, 185, 0.6);
     /* border: 1px solid rgb(164, 173, 185); */
     border-radius: 0.5rem;
@@ -69,7 +69,35 @@ body {
 }
 #smishing-banner{
     color: red;
-    font-size: medium;
+    font-size: 1.0rem;
+}
+
+#footer {
+    font-size: 1rem;
+    border-top: solid darkslateblue 3px;
+}
+a {
+    text-decoration: none;
+    color: #555;
+}
+a:hover {
+    color: darkslateblue;
+    text-decoration: none;
+}
+.fa-facebook{
+    color: #4965ab;
+    
+}
+.fa-twitter {
+    color: #1da2f3;
+}
+.fa-youtube {
+    color: red;
+}
+.fa-facebook,
+.fa-twitter,
+.fa-youtube {
+    font-size: 1.5rem;
 }
 
 /* -------------------------------- Media Queries */
@@ -112,10 +140,10 @@ body {
     .active-link {
       border: none!important;
   }  
-  #hero-text-bg h1{
+  #hero-text h1{
     font-size: 2.0rem;
   }
-  #hero-text-bg{
+  #hero-text{
     background: rgba(164, 173, 185, 0.5);
     border: none;
   }
@@ -127,3 +155,31 @@ body {
   
 }
 
+@media (max-width: 489px) {
+
+    #hero-text h1{
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: darkslateblue;
+      }
+      #hero-text{
+        background: none;
+        border: none;
+      }
+      .shop-now-button {
+        background: darkslateblue;
+        color: white;
+        min-width: 100px;    
+        font-size: 0.8rem;
+    }
+    #delivery-banner h4{
+        font-size: 1.0rem;
+    }
+    #smishing-banner{
+        color: red;
+        font-size: 0.8rem;
+    }
+#footer {
+    font-size: 0.8rem;
+}
+}
