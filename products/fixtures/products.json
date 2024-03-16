@@ -3,7 +3,7 @@
        "pk":1,
        "model":"products.product",
        "fields":{
-          "sku":"asp2024001", // Stock Keeping Unit
+          "sku":"asp2024001",
           "name":"gift_set",
           "description":"Gift Set\nA combination of 2 bars of 60g soap and a bar of 100g soap.\n1. Blueberry scent 60g\n2. Mint scent 60g\n3. Olive with poppy seed 140g\n",
           "price":38.99,
