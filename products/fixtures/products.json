@@ -3,42 +3,154 @@
        "pk":1,
        "model":"products.product",
        "fields":{
-          "sku":"", // Stock Keeping Unit
-          "name":"",
-          "description":"",
-          "price":53.99,
-          "category":6,
+          "sku":"asp2024001", // Stock Keeping Unit
+          "name":"gift_set",
+          "description":"Gift Set\nA combination of 2 bars of 60g soap and a bar of 100g soap.\n1. Blueberry scent 60g\n2. Mint scent 60g\n3. Olive with poppy seed 140g\n",
+          "price":38.99,
+          "category":3,
           "rating":4.6,
           "image_url":"",
-          "image":""
+          "image":"AS1000801GS.jpg"
        }
     },
     {
         "pk":2,
         "model":"products.product",
         "fields":{
-           "sku":"",
-           "name":"",
-           "description":"",
-           "price":53.99,
-           "category":6,
-           "rating":4.6,
+           "sku":"asp2024012",
+           "name":"gift_set",
+           "description":"Gift Set\nA combination of 3 bars of 140g soap and a 15ml bath oil.\n1. 3 bars of Macadamia soap 140g\n2. 1 bottle of 15ml Macadamia bath oil",
+           "price":52.99,
+           "category":3,
+           "rating":4.2,
            "image_url":"",
-           "image":""
+           "image":"AS1000806GS.jpg"
         }
-     },
-     {
-        "pk":,
+    },
+    {
+        "pk":3,
         "model":"products.product",
         "fields":{
-           "sku":"",
-           "name":"",
-           "description":"",
-           "price":53.99,
-           "category":6,
+           "sku":"asp2024008",
+           "name":"gift_set",
+           "description":"Gift Set\nA combination of 1 bars of 140g a packet of 200 pcs bamboo cotton buds and a piece of eco-friendly body scrubber.\n1. 1 bars of Coffee soap 140g\n2. 1 packet of bamboo cotton buds\n3. 1 piece of eco-friendly body scrubber",
+           "price":32.99,
+           "category":3,
            "rating":4.6,
            "image_url":"",
-           "image":""
+           "image":"AS1000808GS.jpg"
         }
-     },
+    },
+    {
+        "pk":4,
+        "model":"products.product",
+        "fields":{
+           "sku":"asp20240010",
+           "name":"gift_set",
+           "description":"Gift Set\nA combination of 4 bars of 140g soap.\n1. 2 bars of Eucalyptus soap\n2. 2 bars of Olive soap",
+           "price":32.99,
+           "category":3,
+           "rating":4.0,
+           "image_url":"",
+           "image":"AS1000812GS.jpg"
+        }
+    },
+    {
+        "pk":5,
+        "model":"products.product",
+        "fields":{
+           "sku":"asp20240012",
+           "name":"soap",
+           "description":"Soap\nEucalyptus protect your skin from dryness and flakking.",
+           "price":8.99,
+           "category":1,
+           "rating":4.0,
+           "image_url":"",
+           "image":"AS1000902S.jpg"
+        }
+    },
+    {
+        "pk":6,
+        "model":"products.product",
+        "fields":{
+           "sku":"asp20240014",
+           "name":"soap",
+           "description":"Soap\nRose soap especially beneficial for dry skin type. It help moisturizing your skin and regenerates the skin tissues.",
+           "price":11.99,
+           "category":1,
+           "rating":4.8,
+           "image_url":"",
+           "image":"AS1000906S.jpg"
+        }
+    },
+    {
+        "pk":7,
+        "model":"products.product",
+        "fields":{
+           "sku":"asp20240016",
+           "name":"soap",
+           "description":"Soap\nHoney are natural hydrating agent, it help your skin hydrated and the anti-oxidant help rejuvenate your skin.",
+           "price":11.99,
+           "category":1,
+           "rating":4.6,
+           "image_url":"",
+           "image":"AS1000908S.jpg"
+        }
+    },
+    {
+        "pk":8,
+        "model":"products.product",
+        "fields":{
+           "sku":"asp20240018",
+           "name":"soap",
+           "description":"Soap\nOrange peel soap have the benefits of detoxify the skin and brighten and lighten the skin. Great for oily skin type.",
+           "price":8.99,
+           "category":1,
+           "rating":4.2,
+           "image_url":"",
+           "image":"AS1000910S.jpg"
+        }
+    },
+    {
+        "pk":9,
+        "model":"products.product",
+        "fields":{
+           "sku":"asp20240020",
+           "name":"soap",
+           "description":"Soap\nCoffee soap help improve skin texture.",
+           "price":11.99,
+           "category":1,
+           "rating":4.4,
+           "image_url":"",
+           "image":"AS1000912S.jpg"
+        }
+    },
+    {
+        "pk":10,
+        "model":"products.product",
+        "fields":{
+           "sku":"asp20240022",
+           "name":"soap",
+           "description":"Soap\nMilk soap pH is closer to our body therefore it's great for skin with condition such as eczema, psoriasis, acne and dry skin.",
+           "price":11.99,
+           "category":1,
+           "rating":4.5,
+           "image_url":"",
+           "image":"AS1000914S.jpg"
+        }
+    },
+    {
+        "pk":11,
+        "model":"products.product",
+        "fields":{
+           "sku":"asp20240024",
+           "name":"soap",
+           "description":"Soap\n",
+           "price":11.99,
+           "category":1,
+           "rating":4.5,
+           "image_url":"",
+           "image":"AS1000916S.jpg"
+        }
+    },
 ]
