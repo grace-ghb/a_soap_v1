@@ -62,7 +62,7 @@
            "sku":"asp20240012",
            "name":"soap",
            "description":"Soap\nEucalyptus protect your skin from dryness and flakking.",
-           "price":8.99,
+           "price":11.99,
            "category":1,
            "rating":4.0,
            "image_url":"",
@@ -145,12 +145,96 @@
         "fields":{
            "sku":"asp20240024",
            "name":"soap",
-           "description":"Soap\n",
-           "price":11.99,
+           "description":"Soap\nLemongrass and Tea Tree are product with anti-bacterial, anti-inflammatory and antimicrobial properites.  Therefore it is great for skin prone to acne problems.",
+           "price":13.99,
            "category":1,
            "rating":4.5,
            "image_url":"",
            "image":"AS1000916S.jpg"
         }
     },
+    {
+        "pk":12,
+        "model":"products.product",
+        "fields":{
+           "sku":"asp20240026",
+           "name":"soap",
+           "description":"Soap\nPink Grapefruit soap is great for exfoliating anf brightening skin. The high vitamin C in the extract refreshes and brighten the skin that damaged by the environmental toxic.",
+           "price":11.99,
+           "category":1,
+           "rating":4.2,
+           "image_url":"",
+           "image":"AS1000918S.jpg"
+        }
+    },
+    {
+        "pk":13,
+        "model":"products.product",
+        "fields":{
+           "sku":"asp20240028",
+           "name":"soap",
+           "description":"Soap\nOatmeal and Almond flakes soap are good for deep cleansing to restore your skin and leave your skin feeling smooth and healthy.",
+           "price":13.99,
+           "category":1,
+           "rating":4.5,
+           "image_url":"",
+           "image":"AS1000920S.jpg"
+        }
+    },
+    {
+        "pk":14,
+        "model":"products.product",
+        "fields":{
+           "sku":"asp20240030",
+           "name":"soap",
+           "description":"Soap\nLavender is natura anti-inflammatory and antiseptic and it's scent has calming effect that help you to rest and relax.",
+           "price":13.99,
+           "category":1,
+           "rating":4.5,
+           "image_url":"",
+           "image":"AS1000922S.jpg"
+        }
+    },
+    {
+        "pk":15,
+        "model":"products.product",
+        "fields":{
+           "sku":"asp20240032",
+           "name":"soap",
+           "description":"Soap\nCoconut and Goat Milk soap has moisturizing and rejuvenating properties that help repair skin demaged from environmental toxic back to smooth and soft again.",
+           "price":13.99,
+           "category":1,
+           "rating":4.7,
+           "image_url":"",
+           "image":"AS1000924S.jpg"
+        }
+    },
+    {
+        "pk":16,
+        "model":"products.product",
+        "fields":{
+           "sku":"asp20240034",
+           "name":"special_deals",
+           "description":"Special Deals\nTC Trooly Clean Mint hand soap, have antibacterial properties and leave a very soothing and refreshing mint scent after wash.",
+           "price":28.99,
+           "category":2,
+           "rating":4.0,
+           "image_url":"",
+           "image":"AS1000992S.jpg"
+        }
+    },
+    {
+        "pk":17,
+        "model":"products.product",
+        "fields":{
+           "sku":"asp20240036",
+           "name":"special_deals",
+           "description":"Special Deals\nSalt and Stone antioxidant body wash 450ml.",
+           "price":36.99,
+           "category":2,
+           "rating":4.6,
+           "image_url":"",
+           "image":"AS1000994S.jpg"
+        }
+    }
 ]
