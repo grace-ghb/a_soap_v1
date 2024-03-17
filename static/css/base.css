@@ -94,11 +94,35 @@ a:hover {
 .fa-youtube {
     color: red;
 }
+.fa-star{
+    color: #ffa534;
+    font-size: 0.9rem;
+}
 .fa-facebook,
 .fa-twitter,
 .fa-youtube {
     font-size: 1.5rem;
 }
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #e8e2dc;
+    z-index: -1;
+}
+
+/* This is to adjust the images of landscape and potrait to be the same size */
+.card-img-top{
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
 
 /* -------------------------------- Media Queries */
 
