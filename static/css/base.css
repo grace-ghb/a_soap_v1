@@ -64,7 +64,7 @@ body {
     border: 1px solid black !important;
 }
 
-.bg-black{
+.delivery-banner{
     background: darkslateblue !important;
 }
 #smishing-banner{
@@ -121,6 +121,13 @@ a:hover {
     object-fit: cover;
     overflow: hidden;
     border-radius: 2px;
+}
+
+.product-card:hover{   
+    /* to enlarge the card when hover */
+    transform: translate3D(0,-3px,0) scale(1.01);
+    opacity: 0.6;
+
 }
 
 
