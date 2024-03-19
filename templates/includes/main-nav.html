@@ -5,16 +5,21 @@
                 Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?category=soap,gift-set,special_deals" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}" class="dropdown-item ">By Rating</a>
+                                
             </div>
         </li>
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="home-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special
-            </a>            
+                Category
+            </a>  
+            <div class="dropdown-menu border-0" aria-labelledby="products-link">
+                <a href="{% url 'products' %}?category=soap" class="dropdown-item">Soap</a>
+                <a href="{% url 'products' %}?category=gift_set" class="dropdown-item ">Gift Set</a>
+                <a href="{% url 'products' %}?category=special_deals" class="dropdown-item ">Special Deals</a>                
+            </div>          
         </li>
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="blog-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
