@@ -72,11 +72,12 @@ body {
     font-size: 1.0rem;
 }
 
+/* Footer */
 #footer {
     font-size: 1rem;
     border-top: solid darkslateblue 3px;
 }
-a {
+.privacy-text {
     text-decoration: none;
     color: #555;
 }
@@ -94,16 +95,14 @@ a:hover {
 .fa-youtube {
     color: red;
 }
-.fa-star{
-    color: #ffa534;
-    font-size: 0.9rem;
-}
+
 .fa-facebook,
 .fa-twitter,
 .fa-youtube {
     font-size: 1.5rem;
 }
 
+/* products */
 .overlay {
     height: 100%;
     width: 100%;
@@ -112,6 +111,18 @@ a:hover {
     position: fixed;
     background: #e8e2dc;
     z-index: -1;
+}
+
+.products-text{
+    color: darkslateblue;
+    font-weight: 300;
+}
+.fa-star{
+    color: #ffa534;
+    font-size: 0.9rem;
+}
+.tag-text:hover{
+    text-decoration: underline;
 }
 
 /* This is to adjust the images of landscape and potrait to be the same size */
@@ -126,10 +137,13 @@ a:hover {
 .product-card:hover{   
     /* to enlarge the card when hover */
     transform: translate3D(0,-3px,0) scale(1.01);
-    opacity: 0.6;
+    opacity: 0.7;
 
 }
-
+a.category-badge > span.badge:hover {
+    background: darkslateblue !important;
+    color: #fff !important;
+}
 
 /* -------------------------------- Media Queries */
 
