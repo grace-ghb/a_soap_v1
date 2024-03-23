@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/home.jpg') no-repeat center center fixed;
+    background: url('/media/homeimage.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 165px);
     color: #555;
@@ -52,7 +52,10 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    /* background: #222; */
+    background: darkslateblue;
+    opacity: 0.9;
+    border: solid 2px darkslateblue;
     color: white;
 }
 
@@ -68,8 +71,27 @@ body {
     background: darkslateblue !important;
 }
 #smishing-banner{
-    color: red;
     font-size: 1.0rem;
+    color: #705438;
+}
+    
+.alert-warning{
+    /* animation effect on loading page */
+    animation-name: hero-zoom;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+/* animation - create the level of zoom for hero-image */
+@keyframes hero-zoom {
+
+    from {
+        transform: scale(0.6);
+        opacity: .6;
+    }
+
+    to {
+        transform: scale(1.0);
+    }
 }
 
 /* Footer */
@@ -223,6 +245,7 @@ a.category-badge > span.badge:hover {
     #smishing-banner{
         color: red;
         font-size: 0.8rem;
+        text-align: justify;
     }
 #footer {
     font-size: 0.8rem;
