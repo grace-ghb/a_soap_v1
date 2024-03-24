@@ -179,6 +179,13 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+/* Shopping cart */
+.btn-outline-black {
+    background: #fff;
+    color: #000 !important; /* Use !important to overwrite lonk color for <a> */
+    border: 2px solid black;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
