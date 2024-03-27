@@ -94,7 +94,7 @@ body {
     }
 }
 
-/* Footer */
+/* -----------Footer */
 #footer {
     font-size: 1rem;
     border-top: solid darkslateblue 3px;
@@ -124,7 +124,7 @@ a:hover {
     font-size: 1.5rem;
 }
 
-/* products */
+/* -----------products */
 .overlay {
     height: 100%;
     width: 100%;
@@ -181,12 +181,34 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-/* Shopping cart */
+/* ------Shopping cart */
 .btn-outline-black {
     background: #fff;
     color: #000 !important; /* Use !important to overwrite lonk color for <a> */
     border: 2px solid black;
 }
+
+.cart-container{
+    min-height: 320px;
+}
+
+/* -------Toast */
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+
 
 /* -------------------------------- Media Queries */
 
