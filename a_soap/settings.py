@@ -42,14 +42,12 @@ INSTALLED_APPS = [
     'django_countries', 
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',
+    'allauth.socialaccount',    
+    'crispy_forms',
     'home',
     'products',
     'cart',
-    'checkout'
-
-    #other
-    'crispy_forms',
+    'checkout',
 ]
 
 MIDDLEWARE = [
@@ -77,16 +75,15 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
-                'django.template.context_processors.media',
+                'django.template.context_processors.request', # required by allauth                
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
                 'cart.contexts.cart_contents',
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
                 'crispy_forms.templatetags.crispy_forms_field',
-
             ]
         },
     },
