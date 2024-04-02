@@ -99,6 +99,7 @@ body {
     font-size: 1rem;
     border-top: solid darkslateblue 3px;
 }
+
 .privacy-text {
     text-decoration: none;
     color: #555;
@@ -189,7 +190,12 @@ a.category-badge > span.badge:hover {
 }
 
 .cart-container{
-    min-height: 320px;
+    min-height: 360px;
+    /* background-color: #fff; */
+}
+
+.empty-cart {
+    background: url('/media/flowers_landing.jpg') no-repeat center center fixed;
 }
 
 /* -------Toast */
@@ -253,7 +259,7 @@ a.category-badge > span.badge:hover {
     border-bottom-color: #343a40 !important;
 }
 
-.bag-notification-wrapper {
+.cart-notification-wrapper {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
