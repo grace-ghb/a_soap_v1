@@ -5,7 +5,7 @@ html {
 body {
     background: url('/media/homeimage.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 165px);
+    height: calc(100vh - 190px);
     color: #555;
     font-family: sans-serif, Helvetica;
 }
@@ -195,7 +195,7 @@ a.category-badge > span.badge:hover {
 }
 
 .empty-cart {
-    background: url('/media/flowers_landing.jpg') no-repeat center center fixed;
+    background: url('/media/flowers_landing.jpg') no-repeat center center fixed;   
 }
 
 /* -------Toast */
@@ -263,6 +263,10 @@ a.category-badge > span.badge:hover {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+.product-container{
+    min-height: 300px;
 }
 
 
