@@ -282,7 +282,7 @@ a.category-badge > span.badge:hover {
     height: 480px;
     margin: auto;
     padding: 20px;
-    border-radius: 50%;
+    border-radius: 40%;
    }
 
 /* -------------------------------- Media Queries */
