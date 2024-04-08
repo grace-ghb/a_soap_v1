@@ -8,4 +8,4 @@ def index(request):
 
 def about(request):
     """ A view to return the about page """
-    return render(request, 'home/about.html')
+    return render(request, "home/about.html")
