@@ -38,17 +38,6 @@ class AddView(CreateView):
     """
     A view to add blog posts.
     """
-    def post(self, request, pk, *args, **kwargs):
-        queryset = Blog.objects.filter(status=1)
-        blog = get_object_or_404(queryset, pk=pk)
-        liked = False
-        if blog.likes.filter(id=self.request.user.id).exists():
-            liked = True
-
-        return render(
-            request,
-            "blog/add_post.html",
-            {
-                "post": post,
-            },
-        )
+    model = Post
+    template_name = "add_post.html"
+    fields = '__all__'
