@@ -1,27 +1,63 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_title %}Blog_detail{% endblock %}
-
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
+<div class="header-container container">
+    <div class="row">
+        <div class="col">
+
         </div>
     </div>
+</div>
 {% endblock %}
-  
+
 {% block content %}
-<div class="container h-100">
-    <h1>Blog Detail</h1>
-    <div>
-    <h2>{{ object.title }}</h2>
-    <p>{{ object.excerpt }}</p>
-    <p>{{ object.content }}</p>
+<div class="overlay"></div>
+<div class="container one">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="lead-text">{{blog.title}}</h2>
+            <hr class="hr">
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-sm-12 col-md-10 col-lg-6">
+            <img class="" src="{{ blog.image.url }}" alt="Post image">
+        </div>
+        <div class="col-sm-12 col-md-10 col-sm-6">
+            <p><small class="text-muted">Author: <strong>{{blog.author}} | {{blog.created_on}}</strong></small></p>
+            {{blog.content | safe }}
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col mx-5">
+            {% if user.is_authenticated %}
+            <form class="d-inline" action="{% url 'blog:blog_like' blog.slug %}" method="POST">
+                {% csrf_token %}
+                {% if liked %}
+                <button type="submit" name="blogpost_id" value="{{blog.slug}}" class="heart"><i
+                        class="fas fa-heart fa-lg"></i></button>
+                {% else %}
+                <button type="submit" name="blogpost_id" value="{{blog.slug}}" class="heart"><i
+                        class="far fa-heart fa-lg"></i></button>
+                {% endif %}
+            </form>
+            {% else %}
+            <span class="text-secondary"><i class="far fa-heart fa-lg"></i></span>
+            {% endif %}
+            <span class="text-secondary"><strong>{{ blog.number_of_likes }} </strong></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mx-5 p-3">
+            <a href="{% url 'blog:blog' %}" class="search-back m-5 py-4"><i class="fas fa-arrow-left"></i>Back</a>
+        </div>
     </div>
 </div>
 

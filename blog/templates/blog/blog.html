@@ -17,15 +17,14 @@
   
 {% block content %}
 <div class="overlay bg-white"></div>
-<!-- <div class="container h-100">
+<div class="container h-100">    
     <h1>Blog List</h1>
-    <h1>Blog List</h1>
+    <div class="row">
         {% for post in object_list %}
-        <div>
-        <h2><a href="{% url 'blog_detail' post.pk %}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt }}</p>
-        </div>
+            {{ post.title }} - {{ post.created_on }}</br>
+            {{ post.content }}           
         {% endfor %}
-</div> -->
+    </div>
+</div>
 
 {% endblock %}

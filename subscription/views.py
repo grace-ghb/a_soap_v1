@@ -3,6 +3,7 @@ from .forms import SubscribeForm
 from .models import Subscription
 from django.contrib import messages
 from django.core.mail import send_mail
+from django.conf import settings
 
 
 def subscribe(request):
@@ -12,10 +13,10 @@ def subscribe(request):
     if request.method == "POST":
         form = SubscribeForm(request.POST)
         if form.is_valid():
-            form.save()
+            subscription = form.save()
             messages.info(request, "You have subscribed to our newsletter! Thank you.")
             email = request.POST.get("email")
-            subject = "Homemade Soap"
+            subject = "Thank you for Subscribing!"
             message = (
                 "Thank you for subscribing to our newsletter,"
                 + " you will get latest updates on our new products and deals in upcoming email!"
@@ -24,7 +25,7 @@ def subscribe(request):
 
             )
             from_email = "admin@asoap.com"
-            recipient_list = [email]
+            recipient_list = [subscription.email]
             send_mail(subject,
                       message, from_email, recipient_list, fail_silently=False)
             return redirect("/")

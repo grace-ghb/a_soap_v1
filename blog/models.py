@@ -16,7 +16,10 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
 
     class Meta:
+        """
+        sorted created date by latest
+        """
         ordering = ["-created_on"]
 
     def __str__(self):
-        return self.title
+        return self.title + ' | ' + str(self.created_on)

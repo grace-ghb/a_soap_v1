@@ -1,8 +1,9 @@
 from django.shortcuts import render,get_object_or_404, HttpResponseRedirect, reverse
-from .models import Post
 from django.views import generic, View
+from django.views.generic import ListView, DetailView
 from django.core.paginator import Paginator
 from django.contrib import messages
+from .models import Post
 
 
 class BlogList(generic.ListView):
