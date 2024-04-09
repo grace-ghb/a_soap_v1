@@ -1,0 +1,52 @@
+.blogpost{
+    background: url('/media/soap-bubbles.jpg') no-repeat center center fixed;   
+}
+
+.blog-card{
+    background-color: #c3999a;
+    height: 150px;
+    border-radius: 1rem;
+}
+
+.blog-card-inner{
+    padding-top: 5px;
+    padding-left: 5px;
+    margin: 10px;
+    background-color: #c3999a;
+    color: #30385b
+}
+
+.blog-card:hover{   
+    /* to enlarge the card when hover */
+    transform: translate3D(0,-3px,0) scale(1.05);
+    opacity: 1.0;
+    /* border: #725b3e solid 2px; */
+    box-shadow: 1px 3px 1px 3px;
+}
+
+.post-date{
+    font-size: 0.8rem;
+}
+
+.card-post-title{
+    text-decoration: none;
+    color: #30385b;
+}
+
+.card-post-title:hover{
+    color: lightskyblue;
+}
+
+.pagination{
+    color: darkslateblue;
+}
+
+/* Media Query----------- */
+
+@media (max-width: 489px) {
+
+    body{
+        font-size: 0.8rem;
+    }
+
+}

@@ -1,4 +1,5 @@
 from .views import BlogList, BlogDetail
+from django.views.generic import ListView, DetailView
 from django.contrib import admin
 from django.urls import path
 from . import views
