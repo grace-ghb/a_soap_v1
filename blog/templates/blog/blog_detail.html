@@ -4,7 +4,7 @@
 {% block extra_title %}Blog-Detail{% endblock %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
 {% endblock %}
 
 {% block page_header %}
@@ -16,15 +16,11 @@
 {% endblock %}
 
 {% block content %}
-
-<h2>{{post.title}}</h2>
-<small>By: Grace</small></br>
+<h1>My blog details</h1>
+<h2>{{ post.title }}</h2>
 <hr>
 </br>
-<div class="container">
-    {{ post.content }}
-</div>
-<a href="{% url 'blog' %}">Back</a>
-
+<div class="container">{{ post.content }}</div>
+<a href="{% url 'blog' %}">Back to blog list</a>
 
 {% endblock %}
