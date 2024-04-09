@@ -12,6 +12,7 @@ class Post(models.Model):
     title = models.CharField(max_length=100, unique=True)
     excerpt = models.TextField(blank=True)
     content = models.TextField()
+    image_feature = models.ImageField("image", default="placeholder")
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
 

@@ -38,7 +38,13 @@
                             <p class="post-date">{{ post.created_on }}</p>
                         </dt>                    
                         <dd>
-                            {{ post.content }} 
+                            <div class="row">
+                                <div class="col">{{ post.content }} </div>
+                                <div class="col"><a href="">
+                                    {{ post.image_feature }}
+                                </a></div>
+                            </div>
+                            
                         </dd>
                     </dl>
                 </div>
