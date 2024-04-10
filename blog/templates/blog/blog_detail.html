@@ -16,15 +16,25 @@
 {% endblock %}
 
 {% block content %}
-<div class="overlay bg-white"></div>
-<div class="container h-100">    
-    <h2>Title:  {{ post.title }}</h2>
-    <p>{{ post.created_on }}</p>
-    <hr>
-    </br>
-    <div class="container">{{ post.content }}</div>
-    <br/>
-    <hr>
-    <a href="{% url 'blog' %}">Back to blog list</a>
+<div class="overlay bg-secondary"></div>
+    <div class="container h-100">
+        <div class="row bg-light h-100 pt-3 mb-2">            
+            <div class="col-8">   
+                <h2>Title:  {{ post.title }}</h2>
+                <p>{{ post.created_on }}</p>
+                <hr>
+                </br>
+                <div class="container">{{ post.content }}</div>
+                <br/>
+            </div>
+            <div class="col blog-detail-img m-auto">
+                <img src="{{ post.image_feature }}" class="blog-detail-img">
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="row">        
+            <a href="{% url 'blog' %}" style="color: #fff;">Back to blog list</a>
+        </div>   
+    </div>
 </div>
 {% endblock %}

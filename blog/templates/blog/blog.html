@@ -39,9 +39,9 @@
                         </dt>                    
                         <dd>
                             <div class="row">
-                                <div class="col">{{ post.content }} </div>
+                                <div class="col-8">{{ post.excerpt }} </div>
                                 <div class="col"><a href="">
-                                    {{ post.image_feature }}
+                                    {{ post.image }}
                                 </a></div>
                             </div>
                             
@@ -53,16 +53,15 @@
         </div>
     </div>
     <!-- Page pagination -->
-    <div class='row pagination justify-content-center p-4 mt-3'>
+    <div class='row pagination page-item justify-content-center p-4 mb-2'>        
         {% if page_obj.has_previous %}
-        <a href='{% url "blog" %}?page={{ page_obj.previous_page_number }}' class="mx-4">Previous </a>
-        {% endif %}
-
-        <span class='mx-4'>
+        <a href='{% url "blog" %}?page={{ page_obj.previous_page_number }}' class="2">Previous </a>
+        {% endif %} 
+        <span class='px-1'>
             Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
         </span>
         {% if page_obj.has_next %}
-        <a href='{% url "blog" %}?page={{ page_obj.next_page_number }}' class="mx-4"> Next</a>
+        <a href='{% url "blog" %}?page={{ page_obj.next_page_number }}' class="mx-2"> Next</a>
         {% endif %}
     </div>
 </div>

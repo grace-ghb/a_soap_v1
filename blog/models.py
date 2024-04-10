@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -9,7 +10,7 @@ class Post(models.Model):
     """
     Model class for blog post
     """
-    title = models.CharField(max_length=100, unique=True)
+    title = models.CharField(max_length=100, unique=True)  
     excerpt = models.TextField(blank=True)
     content = models.TextField()
     image_feature = models.ImageField("image", default="placeholder")

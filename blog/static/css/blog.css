@@ -37,9 +37,22 @@
     color: lightskyblue;
 }
 
-.pagination{
-    color: darkslateblue;
+.pagination a,
+.pagination{    
+    color: #fff;font-weight: 400;
 }
+
+.blog-detail-img{
+    width: 250px;
+    height: 250px;
+    text-align:center;
+
+}
+
+. blog-detail-content{
+    border: red solid 5px;
+}
+
 
 /* Media Query----------- */
 

@@ -39,5 +39,9 @@ class AddView(CreateView):
     A view to add blog posts.
     """
     model = Post
-    template_name = "add_post.html"
-    fields = '__all__'
+    template_name = "blog/add_post.html"
+    fields = (
+            'title',
+            'excerpt',
+            'content',
+            )
