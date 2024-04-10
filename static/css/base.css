@@ -81,6 +81,21 @@ body {
     animation-duration: 3s;
     animation-fill-mode: both;
 }
+
+.about-soap{
+    text-align: justify;
+    color: #e8e2dc;
+}
+
+.soap-img{
+    background: url('/media/soap.jpg') no-repeat center center fixed;
+    height: 200px;
+}
+
+.about-text{
+    color: #705438;
+}
+
 /* animation - create the level of zoom for hero-image */
 @keyframes hero-zoom {
 
