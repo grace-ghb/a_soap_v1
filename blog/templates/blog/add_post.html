@@ -16,17 +16,17 @@
 {% endblock %}
 
 {% block content %}
-<div class="overlay bg-dark"></div>
+<div class="overlay bg-info"></div>
 <div class="container 100-vh">
     <div class="row">
         <h2>Add Post..............</h2>
     </div>
     <!-- Add post forms -->
     <div class="row">
-        <div class="col text-center">
+        <div class="col-8 m-auto">
         <form method="POST">
             {% csrf_token %}
-            {{ form.as_p }}            
+            {{ form|crispy }}            
         </form>
     </div>        
     </div>
