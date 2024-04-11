@@ -17,24 +17,27 @@
 
 {% block content %}
 <div class="overlay bg-info"></div>
-<div class="container 100-vh">
-    <div class="row">
+<div class="container h-100">
+    <div class="row text-warning mb-5">
         <h2>Add Post..............</h2>
     </div>
     <!-- Add post forms -->
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-8 m-auto">
         <form method="POST">
             {% csrf_token %}
             {{ form|crispy }}            
         </form>
-    </div>        
-    </div>
+          
+     -->
+    <div class="row text-center text-warning">  
+        <h1>Sorry! This page is under CONSTRUCTION.....</h1>
+    </div> 
     <div class="row">
         <div class="col text-center">
-            <button type="button" class="btn btn-outline-secondary">Post</button>
+            <button type="button" class="btn btn-outline-secondary mt-5">Post</button>
         </div>
-        </div>
+    </div>
     
     
 
