@@ -118,13 +118,17 @@ body {
 }
 
 .privacy-text,
-.about-link {
+.about-link,
+.products-link {
     text-decoration: none;
     color: #555;
 }
-a:hover {
-    color: darkslateblue;
+a:hover,
+.products-link:hover,
+.privacy-text:hover,
+.about-link:hover{
     text-decoration: none;
+    color: darkslateblue;
 }
 .fa-facebook{
     color: #4965ab;

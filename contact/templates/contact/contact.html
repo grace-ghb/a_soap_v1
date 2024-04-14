@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}Contact{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+  
+{% block content %}
+<div class="overlay .bg-secondary.bg-gradient"></div>
+<div class="container w-50">
+    <div class="row">
+        <div class="col mt-2 text-center">
+            <h1>Contact Us</h1>
+            <hr>
+        </div>
+    </div>
+    <!-- contact content -->
+    <div class="row mt-1">
+        <div class="col h-100">
+                <form method="post" class="">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <button type="submit" class="btn btn-back btn-lg btn-primary">Submit</button>
+                </form>
+        </div>
+    </div>
+    
+</div>
+
+{% endblock %}
