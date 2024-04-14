@@ -1,7 +1,11 @@
 <div class="container-fluid bg-white mt-5 p-3" id="footer">
     <!-- Copyright -->
     <div class="row p-1">  
-        <div class="col text-center"><a href="" class="privacy-text">Privacy policy</a>  |  &copy; 2024, A|Soap, all rights reserved.</div>
+        <div class="col text-center">
+            <a href="{% url 'privacy' %}" target="_blank" class="privacy-text">Privacy policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            &copy; 2024, A|Soap, all rights reserved&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="{% url 'about' %}" class="about-link">About Homemade Soap</a>
+        </div>
     </div>   
     <!-- Social media link -->
     <div class="row p-1">        
